@@ -1,0 +1,97 @@
+- name: summer on-peak
+  rate: 0.43446
+  start-month: 6
+  end-month: 10
+  time-slots:
+    - days: all
+      start-hour: 16
+      end-hour: 21
+- name: summer off-peak
+  rate: 0.15567
+  start-month: 6
+  end-month: 10
+  time-slots:
+    - days: all
+      start-hour: 21
+      end-hour: 24
+    - days: weekday
+      start-hour: 6
+      end-hour: 16
+    - days: weekend
+      start-hour: 14
+      end-hour: 16
+- name: summer super off-peak
+  rate: 0.06967
+  start-month: 6
+  end-month: 10
+  time-slots:
+    - days: weekday
+      start-hour: 0
+      end-hour: 6
+    - days: weekend
+      start-hour: 0
+      end-hour: 14
+- name: winter on-peak
+  rate: 0.15361
+  start-month: 11
+  end-month: 5
+  time-slots:
+    - days: all
+      start-hour: 16
+      end-hour: 21
+- name: winter off-peak March April
+  rate: 0.10825
+  start-month: 3
+  end-month: 4
+  time-slots:
+    - days: all
+      start-hour: 21
+      end-hour: 24
+    - days: weekday
+      start-hour: 6
+      end-hour: 10
+    - days: weekday
+      start-hour: 14
+      end-hour: 16
+    - days: weekend
+      start-hour: 14
+      end-hour: 16
+- name: winter off-peak
+  rate: 0.10825
+  start-month: 11
+  end-month: 5
+  time-slots:
+    - days: all
+      start-hour: 21
+      end-hour: 24
+    - days: weekday
+      start-hour: 6
+      end-hour: 16
+    - days: weekend
+      start-hour: 14
+      end-hour: 16
+- name: winter super off-peak March April
+  rate: 0.05266
+  start-month: 3
+  end-month: 4
+  time-slots:
+    - days: weekday
+      start-hour: 0
+      end-hour: 6
+    - days: weekday
+      start-hour: 10
+      end-hour: 14
+    - days: weekend
+      start-hour: 0
+      end-hour: 14
+- name: winter super off-peak
+  rate: 0.05266
+  start-month: 11
+  end-month: 5
+  time-slots:
+    - days: weekday
+      start-hour: 0
+      end-hour: 6
+    - days: weekend
+      start-hour: 0
+      end-hour: 14
